@@ -1,0 +1,235 @@
+@font-face {
+    font-family: almoni-regular;
+    src: url(fonts/almoni-regular-aaa.otf);
+}
+
+@font-face {
+    font-family: almoni-thin;
+    src: url(fonts/almoni-thin-aaa.otf);
+}
+
+@font-face {
+    font-family: almoni-ultrablack;
+    src: url(fonts/almoni-ultrablack-aaa.otf);
+}
+
+body {
+    font-family: almoni-regular;
+}
+
+#contaunerPlate {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* אופציונלי, אם אתה רוצה שהדיב יתפרס על כל רוחב המסך */
+    background-color: white;
+    /* הגדר רקע אם צריך */
+    text-align: center;
+    /* אם אתה רוצה למרכז את התמונות */
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+#contaunerPlate img {
+    flex: 1;
+    width: 8%;
+    height: 8%;
+}
+
+body {
+    position: relative;
+    /* חייבים להגדיר את body כ-relativ כדי שהדיב יוכל להיות מוחזק בתוכו */
+    height: 100vh;
+    /* גובה המסך */
+    margin: 0;
+    /* לא להשאיר רווחים */
+    background-color: rgb(223, 247, 255);
+    /* rgb(172, 200, 248) */
+
+}
+
+#bild {
+    background-color: white;
+    /* width: 200px;
+    height: 250px; */
+    margin-right: 20px;
+    /* position: absolute; */
+
+    right: 0;
+    /* ממקם את הדיב בצד ימין */
+    top: 50%;
+    /* ממקם את הדיב באמצע הגובה */
+    transform: translateY(-50%);
+    position: relative;
+    padding: 20px;
+    flex: 1;
+}
+
+#imgBild {
+    position: absolute;
+    /* מאפשר למקם את התמונות על גבי אחת את השנייה */
+    /* ממקם את התמונה בחלק העליון של הדיב */
+    left: 0;
+    /* ממקם את התמונה בצד השמאלי של הדיב */
+    width: 70%;
+    /* מאפשר לתמונות להתפרס על כל רוחב הדיב */
+    height: auto;
+    /* שומר על הפרופורציות של התמונות */
+    /* אם אתה רוצה שהתמונות יתמלאו את הדיב, תוכל להשתמש ב:
+    height: 100%; 
+    object-fit: cover; */
+    bottom: 0;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.container {
+    display: flex;
+    height: 50%;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#orders {
+    background-color: white;
+    /* width: 70%;
+    height: 40%; */
+    flex: 3;
+    margin-left: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 7rem;
+    font-weight: bolder;
+    color: brown;
+    align-items: center;
+}
+
+#margin {
+    height: 70px;
+}
+
+.order {
+    flex: 1;
+    display: flex;
+
+}
+
+#orderImg {
+    flex: 2;
+    max-width: 230px;
+    max-height: 230px;
+    min-height: 230px;
+    min-width: 230px;
+    margin-top: 70px;
+
+}
+
+#tymerImg {
+    flex: 1;
+    max-width: 60px;
+    max-height: 190px;
+    min-height: 190px;
+    min-width: 60px;
+    margin-top: 70px;
+
+}
+
+#containerMini {
+    display: flex;
+    height: 80px;
+    width: 25%;
+    margin-right: 88.5%;
+    margin-top: 20px;
+}
+
+#garbeg {
+    flex: 1;
+    max-width: 70px;
+    max-height: 70px;
+    /* margin-right: 95%;
+    margin-top: 20px; */
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#cntWin {
+    flex: 1;
+    max-width: 68px;
+    max-height: 68px;
+    min-height: 68px;
+
+    margin-bottom: 50%;
+    border-radius: 5px;
+    text-align: center;
+    /* padding-top: 20px; */
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.shaking-element {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+    
+    /* background-image: url('image/vector-comic-style-game-over-illustration.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+}
+body {
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+    font-family: Arial, sans-serif;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 200px;
+    text-align: center;
+    z-index: 1000;
+    opacity: 0.5;
+    transition: opacity 1s;
+}
+
+#overlay.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-10px);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    75% {
+        transform: translateX(-5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+

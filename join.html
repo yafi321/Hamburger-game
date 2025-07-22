@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>התחברות והרשמה</title>
+    <link rel="stylesheet" href="join.css">
+</head>
+
+<body>
+
+    <div class="form-box" id="login-box">
+        <h2>התחברות</h2>
+        <input type="text" id="login-username" placeholder="שם משתמש" required dir="rtl" class="password">
+        <input type="password" id="login-password" placeholder="סיסמה" required dir="rtl" class="password">
+        <button onclick="login()">התחבר</button>
+    </div>
+
+    
+    <div class="form-box" id="register-box">
+        <h2>הרשמה</h2>
+        <input type="text" id="register-username" placeholder="שם משתמש" required dir="rtl">
+        <input type="password" id="register-password"
+            placeholder="סיסמה " required dir="rtl">
+        <button onclick="register()">הרשם</button>
+    </div>
+    <script src="join.js"></script>
+
+</body>
+
+</html>

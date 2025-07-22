@@ -1,0 +1,91 @@
+@font-face {
+    font-family: almoni-regular;
+    src: url(fonts/almoni-regular-aaa.otf);
+}
+
+@font-face {
+    font-family: almoni-thin;
+    src: url(fonts/almoni-thin-aaa.otf);
+}
+
+@font-face {
+    font-family: almoni-ultrablack;
+    src: url(fonts/almoni-ultrablack-aaa.otf);
+}
+
+body {
+    font-family: almoni-regular;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    background-image: url('image/backgroundimg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.form-box {
+    padding: 20px;
+    width: 300px;
+
+    /* ניתן לשנות את הרוחב כאן */
+    /* background-color: white; */
+    border-radius: 8px;
+    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+}
+
+.form-box h2 {
+    text-align: center;
+    
+}
+
+.form-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: #a72828;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.form-box button:hover {
+    background-color: #d23131;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    /* ניתן לשנות את הרוחב כאן */
+    height: 200px;
+    /* ניתן לשנות את הגובה כאן */
+    background-image: url('image/backgroundimg.png');
+    /* הכנס את כתובת התמונה כאן */
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+}
+
+#login-box {
+    margin-left: 20px;
+
+}
+
+#register-box {
+    margin-right: 40px;
+}
