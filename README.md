@@ -46,7 +46,7 @@ After login, the game will automatically load.
 ![Login Page](./login.png)
 
 ### 🎮 Gameplay  
-![Gameplay](./game play.png)
+![Gameplay](./game-play.png)
 
 
 ---
