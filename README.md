@@ -43,10 +43,10 @@ After login, the game will automatically load.
 ## 📸 Screenshots
 
 ### 🔐 Login Page  
-![Login Page](D:\תכנות\javascript\פרוייקט משחק יפי מרגלית ורחלי קלוגר\צילומי מסך\login.png)
+![Login Page](./login.png)
 
 ### 🎮 Gameplay  
-![Gameplay](D:\תכנות\javascript\פרוייקט משחק יפי מרגלית ורחלי קלוגר\צילומי מסך\game play.png)
+![Gameplay](./game play.png)
 
 
 ---
